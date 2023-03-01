@@ -1,0 +1,150 @@
+.site-header {
+  height: 98px;
+  border-bottom: 1px solid $light-color;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  .container {
+    max-width: 1920px;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    .site-header-left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .logo {
+        img {
+          height: 32px;
+        }
+      }
+      .nav {
+        display: flex;
+        flex-direction: row;
+        li {
+          font-size: 18px;
+          margin-left: 25px;
+          font-family: $font-main;
+          a {
+            color: black;
+            transition: $transition-ease;
+            &:hover {
+              color: $main-color;
+            }
+          }
+        }
+      }
+    }
+    .site-header-right {
+      display: flex;
+      flex-direction: row;
+      .search-bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 380px;
+        input {
+          width: 100%;
+          height: 34px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          border: 1px solid $light-color;
+          &:focus {
+            outline: none;
+          }
+        }
+        .search-bar-link {
+          a {
+            padding: 9.8px 11px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            color: black;
+            border: 1px solid $light-color;
+            transition: $transition-ease;
+            &:hover {
+              border: 1px solid $main-color;
+              color: $main-color;
+            }
+          }
+        }
+      }
+      .log-in {
+        margin-right: 25px;
+        margin-left: 25px;
+        a {
+          padding: 9px 30px;
+          font-size: 18px;
+          font-family: $font-main;
+          font-weight: 500;
+          color: black;
+          border: 1px solid $light-color;
+          border-radius: 3px;
+          transition: $transition-ease;
+          i {
+            margin-right: 5px;
+          }
+          &:hover {
+            border: 1px solid $main-color;
+            color: $main-color;
+          }
+        }
+      }
+      .person {
+        a {
+          padding: 9px 30px;
+          font-size: 18px;
+          font-family: $font-main;
+          font-weight: 500;
+          color: black;
+          border-radius: 3px;
+          transition: $transition-ease;
+          background-color: $main-color;
+          i {
+            margin-right: 5px;
+          }
+          &:hover {
+            background-color: #00f2ff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include big-1921 {
+  .site-header {
+    .container {
+      .site-header-left {
+        margin-left: 50px;
+      }
+      .site-header-right {
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+@include mac-1376 {
+  .site-header {
+    .container {
+      .site-header-left {
+        .logo {
+          display: none;
+        }
+        .nav {
+          li {
+            &:first-of-type {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

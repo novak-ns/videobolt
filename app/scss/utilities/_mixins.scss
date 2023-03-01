@@ -10,8 +10,9 @@
   }
 }
 
-@mixin mac-1440 {
-  @media screen and (max-width: 1440px) {
+
+@mixin mac-1376 {
+  @media screen and (max-width: 1376px) {
       @content;
   }
 }

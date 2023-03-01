@@ -1,0 +1,97 @@
+.error {
+  height: calc(100vh - 98px);
+  background: url(../images/404/minion.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    position: relative;
+    height: 100%;
+    .error-content {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      max-width: 500px;
+      h2 {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        font-family: $font-main;
+        color: white;
+        margin-bottom: 30px;
+      }
+      p {
+        font-family: $font-main;
+        color: white;
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        a {
+          font-size: 50px;
+          color: $main-color;
+          font-weight: 700;
+          transition: $transition-ease;
+          margin-bottom: 30px;
+          &:hover {
+            font-size: 55px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include md-991 {
+  .error {
+    .container {
+      .error-content {
+        max-width: 400px;
+        h2 {
+          font-size: 35px;
+          margin-bottom: 25px;
+        }
+        p {
+          font-size: 35px;
+          a {
+            font-size: 45px;
+            margin-bottom: 25px;
+            &:hover {
+              font-size: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mb-555 {
+  .error {
+    .container {
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      .error-content {
+        width: 100%;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        h2 {
+          font-size: 32px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 32px;
+          a {
+            font-size: 45px;
+            margin-bottom: 10px;
+            &:hover {
+              font-size: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300;400;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -172,4 +173,310 @@ html {
 
 .icon-twitter-brands:before {
   content: "\e00d";
+}
+
+.site-footer {
+  border-top: 1px solid #edeef3;
+}
+.site-footer .container {
+  margin-top: 57px;
+  max-width: 1351px;
+}
+.site-footer .container .footer-top {
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+.site-footer .container .footer-top .footer-part .footer-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Anek Tamil", sans-serif;
+  margin-bottom: 16px;
+}
+.site-footer .container .footer-top .footer-part ul li {
+  margin-top: 16px;
+  font-family: "Anek Tamil", sans-serif;
+}
+.site-footer .container .footer-top .footer-part ul li a {
+  transition: 0.4s ease-in-out;
+}
+.site-footer .container .footer-top .footer-part ul li a:hover {
+  color: #00d2dc;
+}
+.site-footer .container .copyright {
+  margin-top: 67px;
+  text-align: center;
+}
+.site-footer .container .copyright span {
+  font-family: "Anek Tamil", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 2px 30px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+}
+.site-footer .container .copyright .copyright-items {
+  margin-top: 38px;
+  font-size: 34px;
+  margin-bottom: 50px;
+}
+.site-footer .container .copyright .copyright-items a {
+  margin-left: 13px;
+  margin-right: 13px;
+  transition: 0.4s ease-in-out;
+}
+.site-footer .container .copyright .copyright-items a:hover {
+  color: #00d2dc;
+}
+
+@media screen and (max-width: 1376px) {
+  .site-footer .container .footer-top {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .site-footer .container {
+    margin-top: 0;
+  }
+  .site-footer .container .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+  .site-footer .container .footer-top .footer-part .footer-title {
+    margin-top: 60px;
+  }
+  .site-footer .container .copyright .copyright-items {
+    margin-bottom: 44px;
+  }
+  .site-footer .container .copyright .copyright-items a {
+    margin-left: 2px;
+    margin-right: 2px;
+    transition: 0.4s ease-in-out;
+  }
+  .site-footer .container .copyright .copyright-items a:hover {
+    color: #00d2dc;
+  }
+}
+.site-header {
+  height: 98px;
+  border-bottom: 1px solid #edeef3;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+.site-header .container {
+  max-width: 1920px;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+}
+.site-header .container .site-header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.site-header .container .site-header-left .logo img {
+  height: 32px;
+}
+.site-header .container .site-header-left .nav {
+  display: flex;
+  flex-direction: row;
+}
+.site-header .container .site-header-left .nav li {
+  font-size: 18px;
+  margin-left: 25px;
+  font-family: "Anek Tamil", sans-serif;
+}
+.site-header .container .site-header-left .nav li a {
+  color: black;
+  transition: 0.4s ease-in-out;
+}
+.site-header .container .site-header-left .nav li a:hover {
+  color: #00d2dc;
+}
+.site-header .container .site-header-right {
+  display: flex;
+  flex-direction: row;
+}
+.site-header .container .site-header-right .search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 380px;
+}
+.site-header .container .site-header-right .search-bar input {
+  width: 100%;
+  height: 34px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: 1px solid #edeef3;
+}
+.site-header .container .site-header-right .search-bar input:focus {
+  outline: none;
+}
+.site-header .container .site-header-right .search-bar .search-bar-link a {
+  padding: 9.8px 11px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: black;
+  border: 1px solid #edeef3;
+  transition: 0.4s ease-in-out;
+}
+.site-header .container .site-header-right .search-bar .search-bar-link a:hover {
+  border: 1px solid #00d2dc;
+  color: #00d2dc;
+}
+.site-header .container .site-header-right .log-in {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.site-header .container .site-header-right .log-in a {
+  padding: 9px 30px;
+  font-size: 18px;
+  font-family: "Anek Tamil", sans-serif;
+  font-weight: 500;
+  color: black;
+  border: 1px solid #edeef3;
+  border-radius: 3px;
+  transition: 0.4s ease-in-out;
+}
+.site-header .container .site-header-right .log-in a i {
+  margin-right: 5px;
+}
+.site-header .container .site-header-right .log-in a:hover {
+  border: 1px solid #00d2dc;
+  color: #00d2dc;
+}
+.site-header .container .site-header-right .person a {
+  padding: 9px 30px;
+  font-size: 18px;
+  font-family: "Anek Tamil", sans-serif;
+  font-weight: 500;
+  color: black;
+  border-radius: 3px;
+  transition: 0.4s ease-in-out;
+  background-color: #00d2dc;
+}
+.site-header .container .site-header-right .person a i {
+  margin-right: 5px;
+}
+.site-header .container .site-header-right .person a:hover {
+  background-color: #00f2ff;
+}
+
+@media screen and (max-width: 1921px) {
+  .site-header .container .site-header-left {
+    margin-left: 50px;
+  }
+  .site-header .container .site-header-right {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 1376px) {
+  .site-header .container .site-header-left .logo {
+    display: none;
+  }
+  .site-header .container .site-header-left .nav li:first-of-type {
+    margin-left: 0;
+  }
+}
+.error {
+  height: calc(100vh - 98px);
+  background: url(../images/404/minion.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.error .container {
+  position: relative;
+  height: 100%;
+}
+.error .container .error-content {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  max-width: 500px;
+}
+.error .container .error-content h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  font-family: "Anek Tamil", sans-serif;
+  color: white;
+  margin-bottom: 30px;
+}
+.error .container .error-content p {
+  font-family: "Anek Tamil", sans-serif;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.error .container .error-content p a {
+  font-size: 50px;
+  color: #00d2dc;
+  font-weight: 700;
+  transition: 0.4s ease-in-out;
+  margin-bottom: 30px;
+}
+.error .container .error-content p a:hover {
+  font-size: 55px;
+}
+
+@media screen and (max-width: 991px) {
+  .error .container .error-content {
+    max-width: 400px;
+  }
+  .error .container .error-content h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  .error .container .error-content p {
+    font-size: 35px;
+  }
+  .error .container .error-content p a {
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+  .error .container .error-content p a:hover {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 555px) {
+  .error .container {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .error .container .error-content {
+    width: 100%;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .error .container .error-content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .error .container .error-content p {
+    font-size: 32px;
+  }
+  .error .container .error-content p a {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+  .error .container .error-content p a:hover {
+    font-size: 50px;
+  }
 }
