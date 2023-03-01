@@ -41,6 +41,12 @@
   }
 }
 
+@include mac-1376 {
+  .error {
+    height: calc(100vh - 63px);
+  }
+}
+
 @include md-991 {
   .error {
     .container {
