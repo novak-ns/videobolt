@@ -565,8 +565,8 @@ html {
   }
   .site-header .container .site-header-right .hamburger.open span:nth-child(1) {
     transform: rotate(45deg);
-    left: 10.5px;
-    top: 25px;
+    left: 9px;
+    top: 24px;
   }
   .site-header .container .site-header-right .hamburger.open span:nth-child(2) {
     width: 0%;
@@ -574,8 +574,8 @@ html {
   }
   .site-header .container .site-header-right .hamburger.open span:nth-child(3) {
     transform: rotate(-45deg);
-    left: 10.5px;
-    top: 15px;
+    left: 9px;
+    top: 14px;
   }
 }
 .error {
