@@ -22,6 +22,7 @@
             font-family: $font-main;
             a {
               transition: $transition-ease;
+              color: black;
               &:hover {
                 color: $main-color;
               }
@@ -50,6 +51,7 @@
           margin-left: 13px;
           margin-right: 13px;
           transition: $transition-ease;
+          color: black;
           &:hover {
             color: $main-color;
           }

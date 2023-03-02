@@ -2,8 +2,8 @@ const hamburger = document.getElementById('hamburger');
 const hamburgerspan = document.getElementsByClassName("hamburger_span")
 const navLinks = document.getElementById('nav');
 const body = document.getElementById('body');
-const btnOne = document.getElementById('log-in');
-const btnTwo = document.getElementById('person');
+const btnOne = document.getElementById('btn-one');
+const btnTwo = document.getElementById('btn-two');
 
         
         document.onclick = function(e){

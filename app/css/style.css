@@ -201,6 +201,7 @@ html {
 }
 .site-footer .container .footer-top .footer-part ul li a {
   transition: 0.4s ease-in-out;
+  color: black;
 }
 .site-footer .container .footer-top .footer-part ul li a:hover {
   color: #00d2dc;
@@ -227,6 +228,7 @@ html {
   margin-left: 13px;
   margin-right: 13px;
   transition: 0.4s ease-in-out;
+  color: black;
 }
 .site-footer .container .copyright .copyright-items a:hover {
   color: #00d2dc;
@@ -348,6 +350,7 @@ html {
 }
 .site-header .container .site-header-right .search-bar input:focus, .site-header .container .site-header-right .search-bar input:active {
   outline: none;
+  padding-left: 5px;
 }
 .site-header .container .site-header-right .search-bar .search-bar-link {
   padding: 19px 19px;
@@ -376,12 +379,12 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.site-header .container .site-header-right .log-in {
+.site-header .container .site-header-right .btn-one {
   margin-right: 25px;
   margin-left: 25px;
   white-space: nowrap;
 }
-.site-header .container .site-header-right .log-in a {
+.site-header .container .site-header-right .btn-one a {
   padding: 9px 30px;
   font-size: 18px;
   font-family: "Anek Tamil", sans-serif;
@@ -391,17 +394,17 @@ html {
   border-radius: 3px;
   transition: 0.4s ease-in-out;
 }
-.site-header .container .site-header-right .log-in a i {
+.site-header .container .site-header-right .btn-one a i {
   margin-right: 5px;
 }
-.site-header .container .site-header-right .log-in a:hover {
+.site-header .container .site-header-right .btn-one a:hover {
   border: 1px solid #00d2dc;
   color: #00d2dc;
 }
-.site-header .container .site-header-right .person {
+.site-header .container .site-header-right .btn-two {
   white-space: nowrap;
 }
-.site-header .container .site-header-right .person a {
+.site-header .container .site-header-right .btn-two a {
   padding: 9px 30px;
   font-size: 18px;
   font-family: "Anek Tamil", sans-serif;
@@ -411,10 +414,10 @@ html {
   transition: 0.4s ease-in-out;
   background-color: #00d2dc;
 }
-.site-header .container .site-header-right .person a i {
+.site-header .container .site-header-right .btn-two a i {
   margin-right: 5px;
 }
-.site-header .container .site-header-right .person a:hover {
+.site-header .container .site-header-right .btn-two a:hover {
   background-color: #00f2ff;
 }
 .site-header .container .hamburger {
@@ -441,6 +444,28 @@ html {
   }
   .site-header .container .site-header-left .nav li:first-of-type {
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .site-header .container .site-header-left {
+    margin-left: 25px;
+  }
+  .site-header .container .site-header-left .nav li {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  .site-header .container .site-header-left .nav li:first-of-type {
+    margin-left: 0;
+  }
+  .site-header .container .site-header-left .nav li:last-of-type {
+    margin-right: 15px;
+  }
+  .site-header .container .site-header-right {
+    margin-right: 25px;
+  }
+  .site-header .container .site-header-right .btn-one {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -476,7 +501,7 @@ html {
     margin-bottom: 70px;
   }
   .site-header .container .site-header-left .nav li:first-of-type {
-    margin-top: 50px;
+    margin-top: 15%;
   }
   .site-header .container .site-header-left .nav li:last-of-type {
     margin-right: 0;
@@ -495,39 +520,39 @@ html {
     margin-right: auto;
     width: 100%;
   }
-  .site-header .container .site-header-right .log-in {
+  .site-header .container .site-header-right .btn-one {
     position: fixed;
     margin-right: 0;
     margin-left: 0;
     left: 100vw;
-    top: 65%;
+    top: 77%;
     transition: 0.4s ease-in-out;
     width: 100vw;
   }
-  .site-header .container .site-header-right .log-in a {
+  .site-header .container .site-header-right .btn-one a {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
   }
-  .site-header .container .site-header-right .log-in.active {
+  .site-header .container .site-header-right .btn-one.active {
     left: 50%;
     transform: translate(-50%, 0);
   }
-  .site-header .container .site-header-right .person {
+  .site-header .container .site-header-right .btn-two {
     position: fixed;
     margin-right: 0;
     margin-left: 0;
     left: 100vw;
-    top: 75%;
+    top: 87%;
     transition: 0.4s ease-in-out;
     width: 100vw;
   }
-  .site-header .container .site-header-right .person a {
+  .site-header .container .site-header-right .btn-two a {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
   }
-  .site-header .container .site-header-right .person.active {
+  .site-header .container .site-header-right .btn-two.active {
     left: 50%;
     transform: translate(-50%, 0);
   }
@@ -610,14 +635,17 @@ html {
   display: flex;
   flex-direction: column;
 }
-.error .container .error-content p a {
+.error .container .error-content p span {
+  margin-bottom: 30px;
+}
+.error .container .error-content p span a {
   font-size: 50px;
   color: #00d2dc;
   font-weight: 700;
   transition: 0.4s ease-in-out;
-  margin-bottom: 30px;
+  display: inline;
 }
-.error .container .error-content p a:hover {
+.error .container .error-content p span a:hover {
   font-size: 55px;
 }
 
@@ -637,11 +665,13 @@ html {
   .error .container .error-content p {
     font-size: 35px;
   }
-  .error .container .error-content p a {
-    font-size: 45px;
+  .error .container .error-content p span {
     margin-bottom: 25px;
   }
-  .error .container .error-content p a:hover {
+  .error .container .error-content p span a {
+    font-size: 45px;
+  }
+  .error .container .error-content p span a:hover {
     font-size: 50px;
   }
 }
@@ -665,11 +695,27 @@ html {
   .error .container .error-content p {
     font-size: 32px;
   }
-  .error .container .error-content p a {
-    font-size: 45px;
+  .error .container .error-content p span {
     margin-bottom: 10px;
   }
-  .error .container .error-content p a:hover {
+  .error .container .error-content p span a {
+    font-size: 45px;
+  }
+  .error .container .error-content p span a:hover {
     font-size: 50px;
   }
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00d2dc;
+  border-radius: 5px;
 }
